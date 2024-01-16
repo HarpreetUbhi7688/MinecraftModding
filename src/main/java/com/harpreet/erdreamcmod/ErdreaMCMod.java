@@ -1,5 +1,6 @@
 package com.harpreet.erdreamcmod;
 
+import com.harpreet.erdreamcmod.block.ModBlocks;
 import com.harpreet.erdreamcmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -34,8 +35,9 @@ public class ErdreaMCMod
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // This is where the DeferredRegister ITEMS has been registered from the ModItems Java Class.
+        // This is where the DeferredRegister for ITEMS, BLOCKS, and other methods are passed to the eventBus.
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading

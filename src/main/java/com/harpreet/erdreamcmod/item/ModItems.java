@@ -15,7 +15,14 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ErdreaMCMod.MOD_ID);
 
-    // Sample/Test/Example First Item.
+    /* My First Item!!!!
+    * A good thing to note here is that the code used in the video
+    * is slightly different as it's an older version. I'll also include the fix to the old one before
+    * we added ModItemGroup as a replacement to MATERIALS.
+    * Old Video Code: new Item(new Item.Properties().group(ItemGroup.MATERIALS)));
+    * Old Fixed Code: new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+    * similarly, for the current code using ModItemGroup, we have to switch from group to tab again.
+    * */
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties().tab(ModItemGroup.ERDREA_GROUP)));
 
