@@ -1,6 +1,6 @@
-#Minecraft Modding With Forge Version 1.16.6-36.2.34 - mdk
+# Minecraft Modding With Forge Version 1.16.6-36.2.34 - mdk
 -----------------------------------------------------------
-##Project Description:
+## Project Description:
 
 - This project is experimental and test based in the sense that
     I will be using this to learn how to mod everything in the game MineCraft.
@@ -14,13 +14,13 @@
     https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html
 
 -----------------------------------------------------------
-##README_ORIGINAL.txt Explanation:
+## README_ORIGINAL.txt Explanation:
 
 - This is the original README.txt file that came with the project
     that I renamed to README_ORIGINAL.txt
 
 -----------------------------------------------------------
-##Personal Notes:
+## Personal Notes:
 
 - Feel free to provide any feedback, and I'll try to look at it whenever I can.
 
