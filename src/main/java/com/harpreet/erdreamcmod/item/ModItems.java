@@ -17,7 +17,7 @@ public class ModItems {
 
     // Sample/Test/Example First Item.
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
-            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.ERDREA_GROUP)));
 
 
     // This register also needs to be registered and can be done with the code below.

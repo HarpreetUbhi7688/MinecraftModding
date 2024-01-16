@@ -1,3 +1,5 @@
 {
-  "item.erdreamcmod.ruby": "Ruby"
+  "item.erdreamcmod.ruby": "Ruby",
+
+  "itemGroup.erdreaModTab": "Erdrea Mod Items"
 }
