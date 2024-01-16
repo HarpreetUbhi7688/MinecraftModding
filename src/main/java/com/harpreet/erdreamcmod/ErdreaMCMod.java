@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 @Mod(ErdreaMCMod.MOD_ID)
 public class ErdreaMCMod
 {
+    // Easier to keep track of the mod id.
     public static final String MOD_ID = "erdreamcmod";
 
     // Directly reference a log4j logger.
