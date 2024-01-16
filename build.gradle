@@ -1,11 +1,3 @@
-// Check if the 'wrapper' task is not already defined
-if (!project.tasks.findByName('wrapper')) {
-    task wrapper(type: Wrapper) {
-        gradleVersion = '7.3.3' // Use the Gradle version you know is compatible
-    }
-}
-
-
 subprojects {
     tasks.withType(JavaCompile) {
         options.fork = true
