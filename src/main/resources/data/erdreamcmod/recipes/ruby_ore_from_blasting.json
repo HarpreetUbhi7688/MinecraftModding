@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "erdreamcmod:ruby_ore"
+  },
+  "result": "erdreamcmod:ruby",
+  "experience": 1.0,
+  "cookingtime": 100
+}

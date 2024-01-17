@@ -32,6 +32,14 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .strength(3.0f, 15.0f)));
 
+    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
+            () -> new Block(AbstractBlock.Properties.of(Material.STONE)
+                    .harvestLevel(3)
+                    .harvestTool(ToolType.PICKAXE)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0f, 15.0f)));
+
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name,toReturn);
