@@ -1,8 +1,8 @@
 package com.harpreet.erdreamcmod.item;
 
 import com.harpreet.erdreamcmod.ErdreaMCMod;
+import com.harpreet.erdreamcmod.item.custom.CrimsonGlow;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +25,9 @@ public class ModItems {
     * */
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties().tab(ModItemGroup.ERDREA_GROUP)));
+
+    public static final RegistryObject<Item> CrimsonGlow = ITEMS.register("crimsonglow",
+            () -> new CrimsonGlow(new Item.Properties().tab(ModItemGroup.ERDREA_GROUP).defaultDurability(10)));
 
 
     // This register also needs to be registered and can be done with the code below.
