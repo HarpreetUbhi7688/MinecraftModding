@@ -3,5 +3,8 @@
   "block.erdreamcmod.ruby_ore": "Ruby Ore",
   "block.erdreamcmod.ruby_block": "Ruby Block",
   "block.erdreamcmod.crimsonglow_block": "CrimsonGlow Block",
-  "itemGroup.erdreaModTab": "Erdrea Mod Items"
+  "item.erdreamcmod.crimsonglow" : "CrimsonGlow",
+  "itemGroup.erdreaModTab": "Erdrea Mod Items",
+  "tooltip.erdreamcmod.crimsonglow": "Hold §eSHIFT§r for more Information!",
+  "tooltip.erdreamcmod.crimsonglow_shift": "Let the §4CrimsonGlow§r shine upon you! But be §4warned!§r You will either §6burn§r or be §bblessed§r by §6fire!§r"
 }
