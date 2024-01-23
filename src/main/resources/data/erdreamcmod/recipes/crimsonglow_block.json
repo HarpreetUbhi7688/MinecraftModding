@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ##",
+    "## ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "erdreamcmod:crimsonglow"
+    }
+  },
+  "result": {
+    "item": "erdreamcmod:crimsonglow_block"
+  }
+}
+
+

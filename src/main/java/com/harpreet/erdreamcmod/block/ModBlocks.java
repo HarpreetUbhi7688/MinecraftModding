@@ -2,6 +2,7 @@ package com.harpreet.erdreamcmod.block;
 
 import com.google.common.base.Supplier;
 import com.harpreet.erdreamcmod.ErdreaMCMod;
+import com.harpreet.erdreamcmod.block.custom.CrimsonGlowBlock;
 import com.harpreet.erdreamcmod.item.ModItemGroup;
 import com.harpreet.erdreamcmod.item.ModItems;
 import net.minecraft.block.AbstractBlock;
@@ -38,6 +39,13 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .requiresCorrectToolForDrops()
                     .strength(3.0f, 15.0f)));
+
+    public static final RegistryObject<Block> CRIMSONGLOW_BLOCK = registerBlock("crimsonglow_block",
+            () -> new CrimsonGlowBlock(AbstractBlock.Properties.of(Material.METAL)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .requiresCorrectToolForDrops()
+                    .strength(2.0f, 10.0f)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
