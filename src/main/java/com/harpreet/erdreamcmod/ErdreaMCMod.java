@@ -1,7 +1,10 @@
 package com.harpreet.erdreamcmod;
 
 import com.harpreet.erdreamcmod.block.ModBlocks;
+import com.harpreet.erdreamcmod.block.custom.CrimsonGlowBlock;
+import com.harpreet.erdreamcmod.eventhandlers.ModEventHandlers;
 import com.harpreet.erdreamcmod.item.ModItems;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -49,6 +52,8 @@ public class ErdreaMCMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+        // Register for the ModEventHandlers class to handle events like left-clicking a block.
+        MinecraftForge.EVENT_BUS.register(ModEventHandlers.class);
     }
 
     private void setup(final FMLCommonSetupEvent event)

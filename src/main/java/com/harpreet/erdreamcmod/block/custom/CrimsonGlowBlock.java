@@ -10,6 +10,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 public class CrimsonGlowBlock extends Block {
     public CrimsonGlowBlock(Properties properties) {
@@ -24,16 +25,13 @@ public class CrimsonGlowBlock extends Block {
 
             if(hand == Hand.MAIN_HAND) {
                 System.out.println("I right-clicked a CrimsonGlowBlock. Called for the Main Hand!");
-            } else if(hand == Hand.OFF_HAND) {
+            }
+            if(hand == Hand.OFF_HAND) {
                 System.out.println("I right-clicked a CrimsonGlowBlock. Called for the Off Hand!");
-            } else {
-                System.out.println("I left-clicked a CrimsonGlowBlock.");
             }
         }
         return super.use(blockState, world, blockPos, playerEntity, hand, hit);
     }
-
-
 
     @Override
     public void stepOn(World world, BlockPos blockPos, Entity entity) {
